@@ -1,0 +1,76 @@
+html>
+  <head>
+    <title>Organized Code</title>
+   
+    <style>
+    
+      @import url('https://fonts.googleapis.com/css?family=Lacquer&display=swap');
+    /*  this is where you would add a CSS styling sheet; 
+      you can also add style as an attribute to individual tags.
+      in line style covers just that chunk but the scope of "<style>" is the whole page*/
+      body{
+        font-family: "Arial";
+        background-color: #f2e1e6
+        /* can also use background-image: url()         */
+      }
+      h1{
+        color: #ffb3c6;
+        font-family: "Lacquer";
+      }
+      
+      section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      
+      div{
+        padding:1em;
+        border:1em solid red;
+        margin: 2em; 
+        background: yellow;
+        width: 30%
+/*   you can add extensions like padding-top, padding-left, margin-top
+        em is a unit of measurement 
+        margin is space between frame and edge of the webpage
+        padding is space between internal content and frame */
+      }
+      #first{
+        color:blue;
+      }
+      .divider{
+          font-family:"Times New Roman"
+      }
+      
+    </style>
+    
+  </head>
+  <body>
+    <section>
+    
+      <div id="first" class= "divider" >
+        <h1 style= "font-size:32" >
+          First Division of my page
+        </h1>
+        <p>
+          this is my paragraph inside a div <br />
+          sections and divs are the same basically. and they are purely
+          organizational/structural <br />
+          however, they can be used to style!
+        </p>
+      </div>
+
+      <div class="divider" >
+        <h1>
+          Second div of my page
+        </h1>
+        <p>
+          paragraph in second div
+          <br> padding and margins based on a css hierarchy
+          <a href= "#first">Anchor to div 1</a>
+        </p>
+      </div>
+      
+    </section>
+  </body>
+</html>
